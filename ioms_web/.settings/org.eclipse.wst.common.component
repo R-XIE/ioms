@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?><project-modules id="moduleCoreId" project-version="1.5.0">
+    <wb-module deploy-name="ioms_web">
+        <wb-resource deploy-path="/" source-path="/target/m2e-wtp/web-resources"/>
+        <wb-resource deploy-path="/" source-path="/src/main/webapp" tag="defaultRootSource"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/resources"/>
+        <wb-resource deploy-path="/WEB-INF/classes" source-path="/src/main/java"/>
+        <dependent-module archiveName="ioms_module-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ioms_module/ioms_module">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ioms_core-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ioms_core/ioms_core">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <dependent-module archiveName="ioms_service-1.0.jar" deploy-path="/WEB-INF/lib" handle="module:/resource/ioms_service/ioms_service">
+            <dependency-type>uses</dependency-type>
+        </dependent-module>
+        <property name="java-output-path" value="/ioms_web/target/classes"/>
+        <property name="context-root" value="ioms"/>
+    </wb-module>
+</project-modules>

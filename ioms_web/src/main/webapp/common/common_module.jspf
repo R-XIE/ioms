@@ -1,0 +1,76 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt"%>
+<!--BEGIN METRO STATES-->
+		<div class="metro-nav">
+			<div class="metro-nav-block nav-block-orange">
+				<a class="module-href" href="#" data-url="${ctx}/welcome/main.htm"> <i class="icon-user"></i>
+					<div class="status">我的主页</div>
+				</a>
+			</div>
+			<div class="metro-nav-block nav-block-red double">
+				<a class="module-href" href="#" data-url="${ctx}/welcome/salaryList.htm"> <i class="icon-money"></i>
+					<div class="info"><fmt:formatNumber value="${salaryCount}" type="currency" /></div>
+					<div class="status">我的工资条</div>
+				</a>
+			</div>
+			
+			<div class="metro-nav-block nav-block-yellow double">
+				<a href="#" class="module-href" data-url="${ctx}/welcome/salaryAlterActionList.htm"> <i class="icon-comments-alt"></i>
+					<div class="info">${salaryAlterCount}</div>
+					<div class="status">我的薪资异动记录</div>
+				</a>
+			</div>
+			<div class="metro-nav-block nav-olive">
+				<a href="#" class="module-href" data-url="${ctx}/welcome/leaveActionListAjax.htm"> <i class="icon-tags"></i>
+					<div class="info">${leaveCount}</div>
+					<div class="status">我的请假记录</div>
+				</a>
+			</div>
+			
+		</div>
+		<div class="metro-nav">
+			<div class="metro-nav-block nav-light-blue double">
+				<a class="module-href" href="#" data-url="${ctx}/welcome/weeklyListAjax.htm" href="#"> <i class="icon-tasks"></i>
+					<div class="info">${weeklyCount}</div>
+					<div class="status">我的周报</div>
+				</a>
+			</div>
+			
+			<div class="metro-nav-block nav-light-purple">
+				<a class="module-href" href="#" data-url="${ctx}/welcome/businessTravelList.htm"> <i
+					class="icon-folder-open"></i>
+					<div class="info">${businessCount}</div>
+					<div class="status">我的出差记录</div>
+				</a>
+			</div>
+			<!-- 
+			<div class="metro-nav-block nav-light-green">
+				<a data-original-title="" href="#"> <i class="icon-envelope"></i>
+					<div class="info">123</div>
+					<div class="status">Messages</div>
+				</a>
+			</div> -->
+			<div class="metro-nav-block  nav-light-green">
+				<a class="module-href" href="#" data-url="${ctx}/welcome/bookList.htm"> <i class="icon-bar-chart"></i>
+					<div class="info">${bookCount}</div>
+					<div class="status">所有的图书信息</div>
+				</a>
+			</div>
+			<div class="metro-nav-block nav-block-green double">
+				<a  href="#" class="module-href" data-url="${ctx}/welcome/bookRecordList.htm"> <i class="icon-eye-open"></i>
+					<div class="info">${bookRecordCount}</div>
+					<div class="status">我的图书借阅记录</div>
+				</a>
+			</div>
+		</div>
+		<div class="space10"></div>
+		<!--END METRO STATES-->
+		<script type="text/javascript">
+			$(function(){
+				$('.module-href').click(function(){
+					var url = $(this).attr("data-url");
+					blockGet(url);
+				});
+			});
+		</script>

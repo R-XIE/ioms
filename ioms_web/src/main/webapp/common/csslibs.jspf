@@ -1,0 +1,13 @@
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<link rel="icon" href="${ctx}/img/icon/favicon/favicon.png" type="image/x-icon" /> 
+<link rel="shortcut icon" href="${ctx}/img/icon/favicon/favicon.png" type="image/x-icon"/>
+<link href="${ctx}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+<link href="${ctx}/assets/bootstrap/css/bootstrap-responsive.min.css" rel="stylesheet" />
+<link href="${ctx}/assets/bootstrap/css/bootstrap-fileupload.css" rel="stylesheet" />
+<link href="${ctx}/assets/font-awesome/css/font-awesome.css" rel="stylesheet" />
+<link href="${ctx}/css/style.css" rel="stylesheet" />
+<link href="${ctx}/css/style-responsive.css" rel="stylesheet" />
+<link href="${ctx}/css/style-default.css" rel="stylesheet" id="style_color" />   
+<link rel="stylesheet" href="${ctx}/assets/data-tables/DT_bootstrap.css" />
+<link href="${ctx}/assets/fancybox/source/jquery.fancybox.css" rel="stylesheet" />

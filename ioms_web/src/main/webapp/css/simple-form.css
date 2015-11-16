@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+.input-append .search_content {
+	width: 60%;
+}
+
+.input-prepend .search_content {
+	width: 50%;
+}
+
+.search_select {
+	width: 40%;
+}
+
+.search_line {
+	font-size: 14px;
+}
+
+.btn_clear {
+	margin-bottom: 10px;
+}
+
+.dataTables_info {
+	padding-top: 8px;
+}
+
+/* .row-fluid .input_span4 {
+	margin-left: 0 ;
+} */

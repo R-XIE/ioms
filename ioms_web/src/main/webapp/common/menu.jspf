@@ -1,0 +1,19 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<ul class="sidebar-menu">
+	<li class="sub-menu"><a class="" href="${ctx}/welcome/index.htm">
+			<i class="icon-dashboard"></i> <span>我的主页</span>
+	</a></li>
+	<c:forEach items="${modules}" var="module">
+		<li class="sub-menu"><a href="javascript:;" class=""> <i
+				class="${module.moduleCss}"></i> <span>${module.moduleName}</span>
+				<span class="arrow"></span>
+		</a>
+			<ul class="sub">
+				<c:forEach items="${module.resources}" var="resource">
+					<li><a class="" href="#" data-url="${ctx}/${resource.resourcesUrl}">${resource.resourcesName }</a></li>
+				</c:forEach>
+			</ul></li>
+			
+	</c:forEach>
+</ul>

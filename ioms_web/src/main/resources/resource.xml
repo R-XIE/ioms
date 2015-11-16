@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<iitdevres>		
+		<resource id="1" name="权限模块" css="icon-cogs"  super="-1"/>
+		<resource id="2" name="基础模块" css="icon-bold"  super="-1"/>		
+		<resource id="3" name="人事模块" css="icon-male"  super="-1"/>
+		<resource id="5" name="行政模块" css="icon-folder-close-alt"  super="-1"/>
+		<resource id="6" name="周报模块" css="icon-tasks"  super="-1"/>
+		<resource id="7" name="运维模块" css="icon-desktop"  super="-1"/>
+		<resource id="10" name="角色管理及授权" url="permiss/roleActionList.htm" super="1"/>
+		<resource id="20" name="部门管理" url="base/branchActionList.htm" super="2"/>
+		<resource id="21" name="岗位管理" url="base/positionActionList.htm" super="2"/>
+		<resource id="22" name="职位管理" url="base/postActionList.htm" super="2"/>
+		<resource id="23" name="项目管理" url="base/projectActionList.htm" super="2"/>
+		<resource id="40" name="费用类型维护" url="cost/costTypeActionList.htm" super="2"/>
+		<resource id="43" name="图书类型信息管理" url="book/bookTypeActionList.htm" super="2"/>
+		<resource id="30" name="面试信息管理" url="member/interviewActionListAjax.htm" super="3"/>
+		<resource id="31" name="员工信息管理" url="member/staffActionList.htm" super="3"/>
+		<resource id="32" name="请假信息管理" url="member/leaveActionListAjax.htm" super="3"/>
+		<resource id="33" name="薪资信息管理" url="member/salaryActionListAjax.htm" super="3"/>
+		<resource id="34" name="薪资异动信息管理" url="member/salaryAlterActionList.htm" super="3"/>
+		<resource id="41" name="费用信息管理" url="cost/costActionListAjax.htm" super="5"/>
+		<resource id="42" name="出差信息管理" url="business/businessTravelActionList.htm" super="5"/>
+		<resource id="44" name="图书信息管理" url="book/bookActionList.htm" super="5"/>
+		<resource id="51" name="个人周报管理" url="weekly/weeklyActionListAjax.htm" super="6"/>
+		<resource id="60" name="敏感信息管理" url="operation/pwdActionList.htm" super="7"/>
+		<resource id="61" name="运维更改维护记录" url="operation/logActionListAjax.htm" super="7"/>
+		<resource id="62" name="运维备份记录" url="operation/backupActionListAjax.htm" super="7"/>
+</iitdevres>

@@ -1,0 +1,119 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<c:set var="ctx" value="${pageContext.request.contextPath}" />
+
+<!--[if IE]>
+    <script src="${ctx}/js/html5.js"></script>
+<![endif]-->
+<!-- Load javascripts at bottom, this will reduce page load time -->
+<script src="${ctx}/js/jquery-1.8.3.min.js"></script>
+<script src="${ctx}/js/jquery.nicescroll.js" type="text/javascript"></script>
+<script src="${ctx}/assets/jquery-ui/jquery-ui-1.10.1.custom.min.js"
+	type="text/javascript"></script>
+<script src="${ctx}/assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="${ctx}/assets/jquery-slimscroll/jquery.slimscroll.min.js"></script>
+<script src="${ctx}/js/jquery.scrollTo.min.js"></script>
+<!-- ie8 fixes -->
+<!--[if lt IE 9]>
+<script src="${ctx}/js/excanvas.js"></script>
+<script src="${ctx}/js/respond.js"></script>
+<![endif]-->
+<script type="text/javascript"
+	src="${ctx}/assets/gritter/js/jquery.gritter.js"></script>
+<script type="text/javascript" src="${ctx}/js/jquery.pulsate.min.js"></script>
+<!--common script for all pages-->
+<!-- END JAVASCRIPTS -->
+<script src="${ctx}/js/jquery.blockui.js"></script>
+<!--script for this page only-->
+<script src="${ctx}/js/dialog.js"></script>
+<script type="text/javascript"
+	src="${ctx}/assets/chosen-bootstrap/chosen/chosen.jquery.min.js"></script>
+<!--script for this page only-->
+<!-- END JAVASCRIPTS -->
+<script src="${ctx}/custom/href.js"></script>
+<script type="text/javascript">
+	var ctx = '/ioms/';
+	var dateF;
+	//table配置
+	var minDataTable = {
+		"oLanguage" : {// 语言国际化
+			"sUrl" : ctx + "/js/js/jquery.dataTable.cn.txt"
+		},
+		"aoColumnDefs" : [ {
+			"bSortable" : false,
+			"aTargets" : [ 0 ]
+		} ],
+		"bStateSave" : true,
+		"iDisplayLength" : 5,
+		"aLengthMenu" : [ [ 5, 10, 20, -1 ], [ 5, 10, 20, "全部" ] ]
+	};
+	var maxDataTable = {
+		"oLanguage" : {// 语言国际化
+			"sUrl" : ctx + "/js/js/jquery.dataTable.cn.txt"
+		},
+		"aoColumnDefs" : [ {
+			"bSortable" : false,
+			"aTargets" : [ 0 ]
+		} ],
+		"bStateSave" : true,
+	};
+	//用于验证
+	function validateAjax(url, param) {
+		var result = false;
+		// 设置同步
+		$.ajaxSetup({
+			async : false
+		});
+		$.post(url, param, function(data) {
+			result = data;
+		});
+		// 恢复异步
+		$.ajaxSetup({
+			async : true
+		});
+		return result;
+	}
+	//分页组件配置
+	function getBootstrapPaginator(localSite) {
+		var page = $('#page');
+		var configPageSimple = {
+			currentPage : page.attr('currentPage'),
+			totalPages : page.attr('totalPages'),
+			numberOfPages : page.attr('numberOfPages'),// 显示的页数
+			onPageClicked : function(event, originalEvent, type, page) {
+				var param = $('#queryForm').serialize();
+				blockPost(ctx + localSite + 'ListAjax.htm?p=' + page, param);
+			},
+			tooltipTitles : function(type, page, current) {
+				switch (type) {
+				case "first":
+					return "跳转到第一页";
+				case "prev":
+					return "跳转到上一页";
+				case "next":
+					return "跳转到下一页";
+				case "last":
+					return "跳转到最后一页";
+				case "page":
+					return (page === current) ? "当前页数为" + page : "跳转到第" + page
+							+ "页";
+				}
+			},
+		};
+		page.bootstrapPaginator(configPageSimple);
+	}
+	$(function() {
+		//获取上个月的full name
+		var date = new Date();
+		//var date= new Date();
+		//date.setMonth(10);
+		dateF = date.getFullYear() + '.';
+		if (date.getMonth() * 1 < 10)
+			dateF = dateF + '0' + date.getMonth();
+		if (date.getMonth() * 1 >= 10)
+			dateF = dateF + date.getMonth();
+		if (date.getMonth() == '0')
+			dateF = (date.getFullYear() * 1 - 1) + '.12';
+	});
+</script>

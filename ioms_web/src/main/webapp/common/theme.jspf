@@ -1,0 +1,13 @@
+<%@ page language="java" contentType="text/html; charset=utf-8"
+	pageEncoding="utf-8"%>
+<div id="theme-change" class="hidden-phone">
+	<i class="icon-cogs"></i> <span class="settings"> <span
+		class="text">颜色风格:</span> <span class="colors"> <span
+			class="color-default" data-style="default" data-site="${ctx}"></span>
+			<span class="color-green" data-style="green" data-site="${ctx}"></span>
+			<span class="color-gray" data-style="gray" data-site="${ctx}"></span>
+			<span class="color-purple" data-style="purple" data-site="${ctx}"></span>
+			<span class="color-red" data-style="red" data-site="${ctx}"></span>
+	</span>
+	</span>
+</div>

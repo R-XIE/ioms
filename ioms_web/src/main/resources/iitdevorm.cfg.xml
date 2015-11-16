@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- -->
+<marsorm>
+	<orm-mapping>
+		<!-- annotation/xml -->
+		<list type="annotation"><!-- 类或者是XML -->
+			<value>com.iitdev.ioms.base.data.bo.*</value>
+			<value>com.iitdev.ioms.book.data.bo.*</value>
+			<value>com.iitdev.ioms.business.data.bo.*</value>
+			<value>com.iitdev.ioms.cost.data.bo.*</value>
+			<value>com.iitdev.ioms.member.data.bo.*</value>
+			<value>com.iitdev.ioms.permiss.data.bo.*</value>
+			<value>com.iitdev.ioms.weekly.data.bo.*</value>
+			<value>com.iitdev.ioms.operation.data.bo.*</value>
+		</list>
+	</orm-mapping>
+</marsorm>
