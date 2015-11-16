@@ -102,7 +102,7 @@
 </body>
 <!-- END BODY -->
 <script>
-var ctx='/ioms/';
+var ctx='/';
 </script>
 <script src="${ctx}/custom/login.js"></script>
 </html>

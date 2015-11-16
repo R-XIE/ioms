@@ -33,7 +33,7 @@
 <!-- END JAVASCRIPTS -->
 <script src="${ctx}/custom/href.js"></script>
 <script type="text/javascript">
-	var ctx = '/ioms/';
+	var ctx = '/';
 	var dateF;
 	//table配置
 	var minDataTable = {
