@@ -1,0 +1,44 @@
+/target/
+/ioms_core/target/
+/ioms_generator/target/
+/ioms_module/target/
+/ioms_service/target/
+/ioms_web/target/
+/ioms_web/src/main/webapp/WEB-INF/classes
+/ioms_web/src/main/webapp/WEB-INF/lib
+
+
+
+
+
+<<<<<<< .mine
+/target/
+/ioms_core/target/
+/ioms_generator/target/
+/ioms_module/target/
+/ioms_service/target/
+/ioms_web/target/
+/ioms_web/src/main/webapp/WEB-INF/classes
+/ioms_web/src/main/webapp/WEB-INF/lib
+
+
+
+
+
+
+=======
+# ---> Java
+*.class
+
+# Mobile Tools for Java (J2ME)
+.mtj.tmp/
+
+# Package Files #
+*.jar
+*.war
+*.ear
+
+# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
+hs_err_pid*
+
+>>>>>>> .theirs
