@@ -93,7 +93,7 @@
 			</a>
 		</div>
 		<div class="metro double-size blue">
-			<a href=http://gogs.cuisongliu.com/" target="_blank"  class="social-link"> <i
+			<a href="http://gogs.cuisongliu.com/" target="_blank"  class="social-link"> <i
 				class="icon-twitter-sign"></i> <span>gogs git托管</span>
 			</a>
 		</div>
