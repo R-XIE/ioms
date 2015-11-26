@@ -8,4 +8,4 @@
 /ioms_web/src/main/webapp/WEB-INF/lib
 .classpath
 /.idea
-.iml
+*.iml
