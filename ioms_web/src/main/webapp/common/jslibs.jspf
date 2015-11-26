@@ -2,7 +2,7 @@
 	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
-
+<%@include file="/common/path.jspf" %>
 <!--[if IE]>
     <script src="${ctx}/js/html5.js"></script>
 <![endif]-->
@@ -33,7 +33,7 @@
 <!-- END JAVASCRIPTS -->
 <script src="${ctx}/custom/href.js"></script>
 <script type="text/javascript">
-	var ctx = '/';
+	var ctx = 'http://localhost:8080/';
 	var dateF;
 	//table配置
 	var minDataTable = {

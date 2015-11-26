@@ -1,5 +1,5 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<c:set var="ctx" value="${pageContext.request.contextPath}"/>
+<c:set var="ctx" value=""/>
 <link rel="icon" href="${ctx}/img/icon/favicon/favicon.png" type="image/x-icon" /> 
 <link rel="shortcut icon" href="${ctx}/img/icon/favicon/favicon.png" type="image/x-icon"/>
 <link href="${ctx}/assets/bootstrap/css/bootstrap.min.css" rel="stylesheet" />

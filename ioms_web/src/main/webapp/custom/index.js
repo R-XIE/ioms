@@ -4,7 +4,7 @@
 jQuery(document).ready(function() {
 		   $('#cleanBuffer').click(function(){
 			   $.post(ctx+'/welcome/cacheClean.htm');
-			   $.post(ctx+'/welcome/main.htm', {}, function(data) {
+			   $.post(ctx+'welcome/main.htm', {}, function(data) {
 	    			$("#main-content").html(data);
 			   });
 		   });

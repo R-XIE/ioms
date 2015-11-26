@@ -11,6 +11,7 @@
    <title>${title}</title>
    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
    <meta content="" name="description" />
+    <%@include file="/common/path.jspf" %>
    <meta content="" name="author" />
    <%@include file="/common/csslibs.jspf" %>
 </head>

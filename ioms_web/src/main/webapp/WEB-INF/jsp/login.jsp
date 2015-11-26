@@ -2,6 +2,10 @@
 	pageEncoding="utf-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <c:set var="ctx" value="${pageContext.request.contextPath}" />
+<%
+	String path = request.getContextPath();
+	String basePath =request.getScheme()+"://"+request.getServerName()+":"+request.getServerPort()+path+"/";
+%>
 <!DOCTYPE html>
 <!--[if IE 8]> <html lang="zh" class="ie8"> <![endif]-->
 <!--[if IE 9]> <html lang="zh" class="ie9"> <![endif]-->
@@ -14,6 +18,7 @@
 <meta content="width=device-width, initial-scale=1.0" name="viewport" />
 <meta content="" name="description" />
 <meta content="" name="author" />
+<base href="<%=basePath %>" />
 <title>IOMS</title>
 <link rel="icon" href="${ctx}/img/icon/favicon/favicon.png" type="image/x-icon" /> 
 <link rel="shortcut icon" href="${ctx}/img/icon/favicon/favicon.png" type="image/x-icon"/>
@@ -47,7 +52,7 @@
 	<div class="lock-header">
 		<!-- BEGIN LOGO -->
 		<a class="center" id="logo"> <img class="center"
-			alt="logo" src="img/logo/logo2.png">
+			alt="logo" src="img/logo/logo.png">
 		</a>
 		<!-- END LOGO -->
 	</div>
@@ -78,23 +83,23 @@
 
 			</div>
 		<div class="metro double-size navy-blue ">
-			<a href="http://www.iitdev.com/" target="_blank" class="social-link"> <i
-				class="icon-facebook-sign"></i> <span>爱迪尔</span>
+			<a href="http://shipyard.cuisongliu.com/" target="_blank" class="social-link"> <i
+				class="icon-facebook-sign"></i> <span>shipyard</span>
 			</a>
 		</div>
 		<div class="metro single-size deep-red">
-			<a href="http://www.hometeda.com/" target="_blank" class="social-link"> <i
-				class="icon-google-plus-sign"></i> <span>泰达家园</span>
+			<a href="http://registry.cuisongliu.com/" target="_blank" class="social-link"> <i
+				class="icon-google-plus-sign"></i> <span>registry</span>
 			</a>
 		</div>
 		<div class="metro double-size blue">
-			<a href="http://bbs.hometeda.com/" target="_blank"  class="social-link"> <i
-				class="icon-twitter-sign"></i> <span>泰达家园论坛</span>
+			<a href=http://gogs.cuisongliu.com/" target="_blank"  class="social-link"> <i
+				class="icon-twitter-sign"></i> <span>gogs git托管</span>
 			</a>
 		</div>
 		<div class="metro single-size purple">
-			<a href="http://biuapp.net/"  target="_blank" class="social-link"> <i 
-			class="icon-skype"></i>	<span>BIU版官方网站</span>
+			<a href="http://gogs.cuisongliu.com/cuisongliu/MyJob"  target="_blank" class="social-link"> <i
+			class="icon-skype"></i>	<span>个人简历</span>
 			</a>
 		</div>
 	</div>
@@ -102,7 +107,7 @@
 </body>
 <!-- END BODY -->
 <script>
-var ctx='/';
+var ctx='http://localhost:8080/';
 </script>
 <script src="${ctx}/custom/login.js"></script>
 </html>
