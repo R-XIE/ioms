@@ -2,10 +2,10 @@
  * 
  */
 $(function() {
-		//var x=$('#hid_flag').val();
-		//if(x){
-		//	window.location.reload();
-		//}
+		var x=$('#hid_flag').val();
+		if(x){
+			window.location.reload();
+		}
 		var dialog=new DialogFunc().init('alert');
 		function alertUname() {
 			dialog=new DialogFunc( "提示信息", '用户名不能为空',"alert").init('alert','hiddenDialog');
