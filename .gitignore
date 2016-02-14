@@ -9,3 +9,9 @@
 .classpath
 /.idea
 *.iml
+.project
+/ioms_core/.stttings/
+/ioms_generator/.stttings/
+/ioms_module/.stttings/
+/ioms_service/.stttings/
+/ioms_web/.stttings/
