@@ -49,7 +49,7 @@
    <!-- BEGIN FOOTER -->
    <div id="footer">
    
-       2013&copy;天津爱迪尔软件开发有限公司
+       2013&copy;cuisongliu个人开发
    </div>
    <!-- END FOOTER -->
    <div id="hiddenDialog"></div>

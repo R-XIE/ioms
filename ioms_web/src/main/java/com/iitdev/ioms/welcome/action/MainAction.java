@@ -21,7 +21,6 @@ import com.iitdev.ioms.member.data.bo.Staff;
 import com.iitdev.ioms.member.data.vo.StaffVO;
 import com.iitdev.ioms.view.data.po.ModulePO;
 import com.iitdev.utils.Util;
-//sun公司仅提供了jpg图片文件的编码api  
 
 /**
  * 
